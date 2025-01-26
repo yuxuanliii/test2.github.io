@@ -1,4 +1,3 @@
-Add a .github/workflows/deploy.yml file under the project root directory
 name: Publish to GH Pages
 on:
   push:
