@@ -2,3 +2,34 @@ baseURL: https://yuxuanliii.github.io/testwebsite/
 languageCode: en-us
 title: youmilab
 theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: people
+      name: People
+      url: /people/
+      weight: 20
+    - identifier: research
+      name: Research
+      url: /research/
+      weight: 30
+    - identifier: post
+      name: Post
+      url: /post/
+      weight: 40
+    - identifier: publication
+      name: Publication
+      url: /publication/
+      weight: 50
+    - identifier: teaching
+      name: Teaching
+      url: /teaching/
+      weight: 60
+    - identifier: joinus
+      name: Join us
+      url: /joinus/
+      weight: 70
