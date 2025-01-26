@@ -9,6 +9,10 @@ menu:
       name: Home
       url: /
       weight: 10
+    - identifier: news
+      name: News
+      url: /news/
+      weight: 15   
     - identifier: people
       name: People
       url: /people/
