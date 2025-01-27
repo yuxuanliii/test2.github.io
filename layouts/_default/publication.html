@@ -37,11 +37,13 @@
     <h2>Methods</h2>
     {{ range .Site.Data.publication.methods }}
     <div class="works">
-        <div class="name"><a href={{.paperUrl}}>{{ .paperTitle }}</a></div>
+        <div class="name">{{ .paperTitle }}</div>
         <p class="publicInfo">{{ .publicInfo }}, {{ .publicDate}}</p>
         <p class="authors">{{ .authors }}</p>
         <div class="links">
-            <a href={{.PDFUrl}} class="pdfUrl">PDF</a>
+            <a href={{.paperUrl}} class="pdfUrl">PDF</a>
+            <a href={{.PDFUrl}} class="pdfUrl">Preprint</a>
+            <a href={{.codeUrl}} class="pdfUrl">R Code</a>
             <!-- Cite Button -->
             <button class="citeBtn">Cite</button>
 
@@ -66,7 +68,9 @@
         <p class="publicInfo">{{ .publicInfo }}, {{ .publicDate}}</p>
         <p class="authors">{{ .authors }}</p>
         <div class="links">
-            <a href={{.PDFUrl}} class="pdfUrl">PDF</a>
+            <a href={{.paperUrl}} class="pdfUrl">PDF</a>
+            <a href={{.PDFUrl}} class="pdfUrl">Preprint</a>
+            <a href={{.codeUrl}} class="pdfUrl">R Code</a>
             <!-- Cite Button -->
             <button class="citeBtn">Cite</button>
 

@@ -6,6 +6,7 @@ methods:
     authors: "Youmi Suk, Yongnam Kim"
     paperUrl : "https://journals.sagepub.com/doi/10.3102/10769986241268902"
     PDFUrl : "https://osf.io/preprints/psyarxiv/sa96g"
+    codeUrl: "https://github.com/youmisuk/fuzzyRD_MG"
     citeText: "@article{suk2023fuzzy,
                 title={Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations},
                 author={Suk, Youmi and Kim, Yongnam},
@@ -21,6 +22,7 @@ methods:
     authors: "Youmi Suk, Yongnam Kim"
     paperUrl : "https://journals.sagepub.com/doi/10.3102/10769986241268902"
     PDFUrl : "https://osf.io/preprints/psyarxiv/sa96g"
+    codeUrl: "https://github.com/youmisuk/fuzzyRD_MG"
     citeText: "@article{suk2023fuzzy,
                 title={Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations},
                 author={Suk, Youmi and Kim, Yongnam},
@@ -38,6 +40,7 @@ applications:
     authors: "Youmi Suk, Yongnam Kim"
     paperUrl : "https://journals.sagepub.com/doi/10.3102/10769986241268902"
     PDFUrl : "https://osf.io/preprints/psyarxiv/sa96g"
+    codeUrl: "https://github.com/youmisuk/fuzzyRD_MG"
     citeText: "@article{suk2023fuzzy,
                 title={Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations},
                 author={Suk, Youmi and Kim, Yongnam},
