@@ -1,0 +1,89 @@
+{{- define "main" }}
+
+<div class="container">
+    <header class="page-header">
+        <h1>
+            {{ .Title }}
+            {{- if (.Param "ShowRssButtonInSectionTermList") }}
+            {{- $rss := (.OutputFormats.Get "rss") }}
+            {{- if (eq .Kind `page`) }}
+            {{- $rss = (.Parent.OutputFormats.Get "rss") }}
+            {{- end }}
+            {{- with $rss }}
+            <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" height="23">
+                <path d="M4 11a9 9 0 0 1 9 9" />
+                <path d="M4 4a16 16 0 0 1 16 16" />
+                <circle cx="5" cy="19" r="1" />
+                </svg>
+            </a>
+            {{- end }}
+            {{- end }}
+        </h1>
+        {{- if .Description }}
+        <div class="post-description">
+            {{ .Description }}
+        </div>
+        {{- end }}
+    </header>
+
+    <div id="searchbox">
+        <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default ("Search...") }}"
+            aria-label="search" type="search" autocomplete="off" maxlength="64">
+        <ul id="searchResults" aria-label="search results"></ul>
+    </div>
+
+    <h2>Methods</h2>
+    {{ range .Site.Data.publication.methods }}
+    <div class="works">
+        <div class="name"><a href={{.paperUrl}}>{{ .paperTitle }}</a></div>
+        <p class="publicInfo">{{ .publicInfo }}, {{ .publicDate}}</p>
+        <p class="authors">{{ .authors }}</p>
+        <div class="links">
+            <a href={{.PDFUrl}} class="pdfUrl">PDF</a>
+            <!-- Cite Button -->
+            <button class="citeBtn">Cite</button>
+
+            <!-- Citation Modal (initially hidden) -->
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cite</h2>
+                    <pre class="citationText">{{ .citeText }}</pre>
+                    <button onclick="copyCitation()">Copy</button>
+                    <!--<button onclick="downloadCitation()">Download</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    {{end}}
+
+    <h2>Applications</h2>
+    {{ range .Site.Data.publication.applications }}
+    <div class="works">
+        <div class="name"><a href={{.paperUrl}}>{{ .paperTitle }}</a></div>
+        <p class="publicInfo">{{ .publicInfo }}, {{ .publicDate}}</p>
+        <p class="authors">{{ .authors }}</p>
+        <div class="links">
+            <a href={{.PDFUrl}} class="pdfUrl">PDF</a>
+            <!-- Cite Button -->
+            <button class="citeBtn">Cite</button>
+
+            <!-- Citation Modal (initially hidden) -->
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cite</h2>
+                    <pre><code class="citationText">{{ .citeText }}</code></pre>
+                    <button onclick="copyCitation()">Copy</button>
+                    <!--<button onclick="downloadCitation()">Download</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    {{end}}
+
+</div>
+
+{{ end }}

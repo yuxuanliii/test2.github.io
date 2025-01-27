@@ -1,0 +1,34 @@
+- name : "Youmi Suk"
+  position : "position"
+  image : "people/youmisuk.jpg"
+  email : "youmisuk@example.com"
+
+- name : "Chenguang Pan"
+  position : "position"
+  image : "people/chenguangpan.jpg"
+  email : "chenguangpan@example.com"
+
+- name : "Yuxuan Li"
+  position : "position"
+  image : "people/yuxuanli.jpg"
+  email : "yuxuanli@example.com"
+
+- name : "xxx xxx"
+  position : "position"
+  image : "people/xxxxxx.jpg"
+  email : "xxxxxx@example.com"
+
+- name : "xxxx xxx"
+  position : "position"
+  image : "people/xxxxxxx.jpg"
+  email : "xxxxxxx@example.com"
+
+- name : "xxxx xxx"
+  position : "position"
+  image : "people/xxxxxxx.jpg"
+  email : "xxxxxxx@example.com"
+
+- name : "xxxx xxx"
+  position : "position"
+  image : "people/xxxxxxx.jpg"
+  email : "xxxxxxx@example.com"
