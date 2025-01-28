@@ -1,19 +1,19 @@
 - name : "Dynamic Treatment Regime"
   image : "research/DTR.jpg"
-  projectUrl : "DTR/"
+  projectUrl : "dtr"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
 - name : "Generative AI"
   image : "research/GenAI.jpg"
-  projectUrl : "GenAI/"
+  projectUrl : "genai"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
 - name : "Generative AI"
   image : "research/GenAI.jpg"
-  projectUrl : "GenAI/"
+  projectUrl : "genai"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
 - name : "Generative AI"
   image : "research/GenAI.jpg"
-  projectUrl : "GenAI/"
+  projectUrl : "genai"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
