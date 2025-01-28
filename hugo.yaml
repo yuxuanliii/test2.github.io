@@ -11,7 +11,7 @@ menu:
       weight: 10
     - identifier: news
       name: News
-      url: /news/
+      url: /#news
       weight: 15   
     - identifier: people
       name: People
