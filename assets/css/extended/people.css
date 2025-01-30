@@ -15,8 +15,8 @@
 }
 
 .team-photo {
-    width: 80%; 
-    height: auto;
+    width: 200px; 
+    height: 200px;
     border-radius: 50%; /* Circular images */
     margin-bottom: 10px;
     object-fit: cover;
@@ -25,9 +25,14 @@
     padding: 10px;
 }
 .member-name {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
     color: #333;
 }
+a.member-name:hover {
+    color: #0056b3;
+}
+
 .member-role {
     font-size: 14px;
     color: #666;

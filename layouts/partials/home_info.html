@@ -20,7 +20,11 @@
     <ul class="news-item">
         <li>
             <strong>[{{ .date }}]</strong>
+            {{ if .newsUrl }}
             <a href={{ .newsUrl }} class="news-link">{{ .name }}</a>
+            {{ else }}
+            <p class="news-text">{{ .name }}</p>
+            {{ end }}
         </li>
     </ul>
 

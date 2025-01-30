@@ -107,6 +107,6 @@
     box-shadow: 0 1px 0 var(--primary);
 }
 
-.news-link:hover{
+a.news-link:hover{
     color: #0056b3;
 }

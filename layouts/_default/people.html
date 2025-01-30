@@ -35,7 +35,11 @@
         <div class="team-member">
             <img src="{{ .image | absURL }}" alt="{{ .name }}" class="team-photo">
             <div class="member-info">
-                <h5 class="member-name">{{ .name }}</h5>
+                {{ if .webpage }}
+                <a href={{ .webpage }} class="member-name">{{ .name }}</a>
+                {{ else }}
+                <p class="member-name">{{ .name }}</p>
+                {{ end }}
                 <p class="member-role">{{ .position }}</p>
                 <a href="mailto:{{ .email }}" class="contact-link">Contact</a>
             </div>

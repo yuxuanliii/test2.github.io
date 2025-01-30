@@ -1,30 +1,33 @@
 - name : "Youmi Suk"
   position : "position"
-  image : "people/youmisuk.jpg"
+  image : "people/youmisuk.png"
   email : "youmisuk@example.com"
+  webpage: "https://youmisuk.com/"
 
 - name : "Chenguang Pan"
   position : "position"
-  image : "people/chenguangpan.jpg"
-  email : "chenguangpan@example.com"
+  image : "people/chenguangpan.png"
+  email : "cp3280@tc.columbia.edu"
+
+- name : "Hyunjee Oh"
+  position : "position"
+  image : "people/xxxxxxx.jpg"
+  email : "ho2321@tc.columbia.edu"
+
+- name : "Thomas Harris"
+  position : "position"
+  image : "people/thomasharris.png"
+  email : "thh2117@tc.columbia.edu"
+
+- name : "Yuxin Cai"
+  position : "position"
+  image : "people/yuxincai.png"
+  email : "yc4328@tc.columbia.edu"
 
 - name : "Yuxuan Li"
   position : "position"
   image : "people/yuxuanli.jpg"
-  email : "yuxuanli@example.com"
+  email : "yl5655@tc.columbia.edu"
 
-- name : "xxx xxx"
-  position : "position"
-  image : "people/xxxxxx.jpg"
-  email : "xxxxxx@example.com"
 
-- name : "xxxx xxx"
-  position : "position"
-  image : "people/xxxxxxx.jpg"
-  email : "xxxxxxx@example.com"
-
-- name : "xxxx xxx"
-  position : "position"
-  image : "people/xxxxxxx.jpg"
-  email : "xxxxxxx@example.com"
 
