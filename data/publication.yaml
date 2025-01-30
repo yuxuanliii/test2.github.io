@@ -1,21 +1,23 @@
 
-methods:
-  - paperTitle : "Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations."
-    publicInfo : "JEBS"
-    publicDate: "2024"
-    authors: "Youmi Suk, Yongnam Kim"
-    paperUrl : "https://journals.sagepub.com/doi/10.3102/10769986241268902"
-    PDFUrl : "https://osf.io/preprints/psyarxiv/sa96g"
-    codeUrl: "https://github.com/youmisuk/fuzzyRD_MG"
-    citeText: "@article{suk2023fuzzy,
-                title={Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations},
-                author={Suk, Youmi and Kim, Yongnam},
-                journal={Journal of Educational and Behavioral Statistics},
-                pages={10769986241268902},
-                year={2023},
-                publisher={SAGE Publications Sage CA: Los Angeles, CA}
-                }"
 
+workingPapers:
+
+  - paperTitle : "Causal Mediation and Functional Outcome Analysis with Process Data"
+    publicInfo : "Preprint"
+    publicDate: "2024"
+    authors: "Youmi Suk, Chan Park (Equal Contribution)"
+    PDFUrl : "https://osf.io/preprints/psyarxiv/xhwv4_v1"
+    citeText: "@misc{suk_park_2025,
+ title={Causal Mediation and Functional Outcome Analysis with Process Data},
+ url={osf.io/preprints/psyarxiv/xhwv4_v1},
+ DOI={10.31234/osf.io/xhwv4_v1},
+ publisher={PsyArXiv},
+ author={Suk, Youmi and Park, Chan},
+ year={2025},
+ month={Jan}
+}"
+
+methods:
   - paperTitle : "Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations."
     publicInfo : "JEBS"
     publicDate: "2024"
@@ -34,18 +36,18 @@ methods:
 
 
 applications:
-  - paperTitle : "Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations."
-    publicInfo : "JEBS"
-    publicDate: "2024"
-    authors: "Youmi Suk, Yongnam Kim"
-    paperUrl : "https://journals.sagepub.com/doi/10.3102/10769986241268902"
-    PDFUrl : "https://osf.io/preprints/psyarxiv/sa96g"
-    codeUrl: "https://github.com/youmisuk/fuzzyRD_MG"
-    citeText: "@article{suk2023fuzzy,
-                title={Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations},
-                author={Suk, Youmi and Kim, Yongnam},
-                journal={Journal of Educational and Behavioral Statistics},
-                pages={10769986241268902},
-                year={2023},
-                publisher={SAGE Publications Sage CA: Los Angeles, CA}
-                }"
+  - paperTitle : "Smoking status, nicotine medication, vaccination, and COVID-19 hospital outcomes: Findings from the COVID EHR Cohort at the University of Wisconsin (CEC-UW) study"
+    publicInfo : "Nicotine & Tobacco Research"
+    publicDate: "2023"
+    authors: ""
+    paperUrl : "https://academic.oup.com/ntr/article/25/6/1184/6693781"
+    citeText: "@article{piasecki2023smoking,
+  title={Smoking status, nicotine medication, vaccination, and COVID-19 hospital outcomes: findings from the COVID EHR cohort at the university of wisconsin (CEC-UW) study},
+  author={Piasecki, Thomas M and Smith, Stevens S and Baker, Timothy B and Slutske, Wendy S and Adsit, Robert T and Bolt, Daniel M and Conner, Karen L and Bernstein, Steven L and Eng, Oliver D and Lazuk, David and others},
+  journal={Nicotine and Tobacco Research},
+  volume={25},
+  number={6},
+  pages={1184--1193},
+  year={2023},
+  publisher={Oxford University Press US}
+}"

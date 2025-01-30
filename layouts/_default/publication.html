@@ -34,59 +34,18 @@
         <ul id="searchResults" aria-label="search results"></ul>
     </div>
 
-    <h2>Methods</h2>
-    {{ range .Site.Data.publication.methods }}
-    <div class="works">
-        <div class="name">{{ .paperTitle }}</div>
-        <p class="publicInfo">{{ .publicInfo }}, {{ .publicDate}}</p>
-        <p class="authors">{{ .authors }}</p>
-        <div class="links">
-            <a href={{.paperUrl}} class="pdfUrl">PDF</a>
-            <a href={{.PDFUrl}} class="pdfUrl">Preprint</a>
-            <a href={{.codeUrl}} class="pdfUrl">R Code</a>
-            <!-- Cite Button -->
-            <button class="citeBtn">Cite</button>
 
-            <!-- Citation Modal (initially hidden) -->
-            <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Cite</h2>
-                    <pre class="citationText">{{ .citeText }}</pre>
-                    <button onclick="copyCitation()">Copy</button>
-                    <!--<button onclick="downloadCitation()">Download</button>-->
-                </div>
-            </div>
-        </div>
-    </div>
-    {{end}}
+    <h2>Methods</h2>
+    {{ partial "publication_template.html" .Site.Data.publication.methods }}
 
     <h2>Applications</h2>
-    {{ range .Site.Data.publication.applications }}
-    <div class="works">
-        <div class="name"><a href={{.paperUrl}}>{{ .paperTitle }}</a></div>
-        <p class="publicInfo">{{ .publicInfo }}, {{ .publicDate}}</p>
-        <p class="authors">{{ .authors }}</p>
-        <div class="links">
-            <a href={{.paperUrl}} class="pdfUrl">PDF</a>
-            <a href={{.PDFUrl}} class="pdfUrl">Preprint</a>
-            <a href={{.codeUrl}} class="pdfUrl">R Code</a>
-            <!-- Cite Button -->
-            <button class="citeBtn">Cite</button>
+    {{ partial "publication_template.html" .Site.Data.publication.applications }}
 
-            <!-- Citation Modal (initially hidden) -->
-            <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Cite</h2>
-                    <pre><code class="citationText">{{ .citeText }}</code></pre>
-                    <button onclick="copyCitation()">Copy</button>
-                    <!--<button onclick="downloadCitation()">Download</button>-->
-                </div>
-            </div>
-        </div>
-    </div>
-    {{end}}
+    <h2>Working Papers</h2>
+    {{ partial "publication_template.html" .Site.Data.publication.workingPapers }}
+
+
+
 
 </div>
 

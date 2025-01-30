@@ -64,13 +64,15 @@
 
 /* Modal Content */
 .modal-content {
-    overflow: auto; /* Enable scroll if needed */
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 8px;
+    width: 40%; 
+    text-indent: 0px;
 }
+
 
 /* The Close Button */
 .close {
@@ -87,3 +89,18 @@
     cursor: pointer;
 }
 
+.citationText {
+    /*overflow: auto; /* Enable scroll if needed */
+    display: block;
+    overflow-x: auto;
+    padding: .5em;
+    color: #333;
+    background: #f8f8f8;
+    font-size: 15px;
+    font-family: "", monospace;
+    word-break: normal;
+}
+
+pre {
+    text-indent: 0px;
+}

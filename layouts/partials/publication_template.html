@@ -1,0 +1,35 @@
+{{ range . }}
+<div class="works">
+    <div class="name">{{ .paperTitle }}</a></div>
+    <p class="publicInfo">{{ .publicInfo }}, {{ .publicDate}}</p>
+    <p class="authors">{{ .authors }}</p>
+    <div class="links">
+        {{ if .paperUrl }}
+        <a href={{.paperUrl}} class="pdfUrl">PDF</a>
+        {{ end }}
+        {{ if .PDFUrl }}
+        <a href={{.PDFUrl}} class="pdfUrl">Preprint</a>
+        {{ end }}
+        {{if .codeUrl }}
+        <a href={{.codeUrl}} class="pdfUrl">R Code</a>
+        {{ end }}
+
+        {{if .citeText }}
+        <!-- Cite Button -->
+        <button class="citeBtn">Cite</button>
+
+        <!-- Citation Modal (initially hidden) -->
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Cite</h3>
+                <pre><code class="citationText">{{ replace .citeText "}," "},\n " }}</code></pre>
+                <button onclick="copyCitation()" class="citeBtn">Copy</button>
+                <!-- <button onclick="downloadCitation()">Download</button> -->
+            </div>
+        </div>
+        {{ end }}
+
+    </div>
+</div>
+{{ end }}
