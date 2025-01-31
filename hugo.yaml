@@ -45,6 +45,15 @@ outputs:
     - RSS
     - JSON 
 
+
+
+outputFormats:
+  outputFormats.JSON:
+    mediaType: "application/json"
+    isPlainText: true
+    baseName: "search-index"
+    notAlternative: true
+
 Params:
     postSections: ["post"]
     researchSections: ["research"]

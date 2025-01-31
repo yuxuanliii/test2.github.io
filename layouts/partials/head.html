@@ -75,13 +75,24 @@
 {{- end }}
 
 {{- /* Search */}}
-{{- if (eq .Layout `publication`) -}}
+
+{{- if (eq .Layout `post`) -}}
 <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+{{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
 {{- $fusejs := resources.Get "js/fuse.basic.min.js" }}
 {{- $license_js := resources.Get "js/license.js" }}
+{{- if not site.Params.assets.disableFingerprinting }}
+{{- $searchPost := (slice $fusejs $license_js $fastsearch ) | resources.Concat "assets/js/search.js" | fingerprint }}
+<script defer crossorigin="anonymous" src="{{ $searchPost.RelPermalink }}" integrity="{{ $searchPost.Data.Integrity }}"></script>
+{{- else }}
+{{- $searchPost := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" }}
+<script defer crossorigin="anonymous" src="{{ $searchPost.RelPermalink }}"></script>
+{{- end }}{{- end -}}
 
-<script src="{{ $fusejs.RelPermalink }}" defer></script>
-<script src="{{ $license_js.RelPermalink }}" defer></script>
+
+{{- if (eq .Layout `publication`) -}}
+{{- $pubsearch := resources.Get "js/publication_search.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
+<script defer crossorigin="anonymous" src="{{ $pubsearch.RelPermalink }}"></script>
 {{- end -}}
 
 
