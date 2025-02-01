@@ -2,7 +2,7 @@
 <div class="works">
     <div class="name">{{ .paperTitle }}</a></div>
     <p class="publicInfo">{{ .publicInfo }}, {{ .publicDate}}</p>
-    <p class="authors">{{ .authors }}</p>
+    <p class="authors">{{ .authors | safeHTML}}</p>
     <div class="links">
         {{ if .paperUrl }}
         <a href={{.paperUrl}} class="pdfUrl">PDF</a>
@@ -12,6 +12,9 @@
         {{ end }}
         {{if .codeUrl }}
         <a href={{.codeUrl}} class="pdfUrl">R Code</a>
+        {{ end }}
+        {{if .packageUrl }}
+        <a href={{.packageUrl}} class="pdfUrl">R Package</a>
         {{ end }}
 
         {{if .citeText }}

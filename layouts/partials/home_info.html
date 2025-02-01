@@ -23,7 +23,7 @@
             {{ if .newsUrl }}
             <a href={{ .newsUrl }} class="news-link">{{ .name }}</a>
             {{ else }}
-            <p class="news-text">{{ .name }}</p>
+            <span class="news-text">{{ .name }}</span>
             {{ end }}
         </li>
     </ul>
