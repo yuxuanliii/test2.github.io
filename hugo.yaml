@@ -54,10 +54,27 @@ outputFormats:
     baseName: "search-index"
     notAlternative: true
 
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+  
+
 Params:
     postSections: ["post"]
     researchSections: ["research"]
     #disableThemeToggle: true
+    math: true
 
 
     
