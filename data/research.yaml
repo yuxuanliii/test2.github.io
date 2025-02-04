@@ -1,19 +1,19 @@
 - name : "Optimal Treatment Regimes for Personalized Education"
-  image : "research/DTR.jpg"
+  image : "research/dtr.jpg"
   projectUrl : "otr/"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
 - name : "Quasi-experimental Designs"
-  image : "research/GenAI.jpg"
+  image : "research/qed.jpg"
   projectUrl : "qed/"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
 - name : "Generative AI"
-  image : "research/GenAI.jpg"
+  image : "research/genai.jpg"
   projectUrl : "genai/"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
 - name : "Process Data Analysis"
-  image : "research/GenAI.jpg"
+  image : "research/pda.jpg"
   projectUrl : "pda/"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
