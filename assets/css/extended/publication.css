@@ -1,28 +1,24 @@
 .works {
     /*background: #ffffff; /* White background for each paper block */
     padding: 15px;
-    margin-bottom: 10px; /* Space between each paper block */
-    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/ /* Subtle shadow for 3D effect */
+    /* margin-bottom: 3px; Space between each paper block */
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/ /* Subtle shadow for 3D effect */
 }
 
 .name {
     font-size: 18px; /* Larger font size for the paper title */
     font-weight: bold;
-    color: #333; /* Dark grey color for text */
+    color: var(--primary); /* Dark grey color for text */
 }
-.name a:hover {
-    color: #0056b3;
-}
-
 
 .publicInfo{
     font-size: 14px; /* Smaller font size for preprint and authors */
-    color: #525252; /* Medium grey color for text */
+    color: var(--secondary); /* Medium grey color for text */
 }
 
 .authors {
     font-size: 14px; /* Smaller font size for preprint and authors */
-    color: #666; /* Medium grey color for text */
+    color: var(--author); /* Medium grey color for text */
 }
 
 .pdfUrl, .citeBtn {
@@ -58,8 +54,8 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0,0,0); /*Fallback color */
+    background-color: rgba(0,0,0,0.4); /*Black w/ opacity*/
 }
 
 /* Modal Content */
@@ -99,6 +95,31 @@
     font-size: 15px;
     font-family: "", monospace;
     word-break: normal;
+}
+
+#publication-search {
+    padding: 4px 10px;
+    width: 50%;
+    color: var(--primary);
+    font-weight: bold;
+    border: 2px solid var(--tertiary);
+    border-radius: var(--radius);
+}
+
+#publication-search:focus {
+    border-color: var(--secondary);
+}
+
+
+#publication-type {
+    padding: 5px 10px;
+    width: 25%;
+    color: var(--secondary);
+    font-weight: bold;
+    border: 2px solid var(--tertiary);
+    /* border-radius: var(--radius); */
+    font-size: 19px;
+    background-color: var(--theme);
 }
 
 

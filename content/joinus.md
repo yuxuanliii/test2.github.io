@@ -11,5 +11,5 @@ title: 'Join us'
   To apply for a research position, please email Prof. Youmi Suk.
 
 ### Contact
-- **Location:** 556A Grace Dodge Hall, 525 West 120th Street, New York, NY 10027
+- **Location:** 552 Grace Dodge Hall, 525 West 120th Street, New York, NY 10027
 - **Email:** [ysuk@tc.columbia.edu](mailto:ysuk@tc.columbia.edu)

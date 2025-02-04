@@ -1,20 +1,15 @@
 ---
-title: "Example"
-date: 2025-02-03T12:00:00
-#tags: ["causal inference", "reinforcement learning", "dynamic treatment regimes"]
-#categories: ["Research"]
-author: "Your Name"
-summary: "Brief summary of the post (optional)"
-hiddenInHomeList: true #hide post on the homepage
-showToc: true #table of contents 
-tocOpen: false #collapse toc
+title: 'Optimal Treatment Regime for Personalized Education' #change title here
+#date: '2024-01-26T18:14:40-05:00'
+draft: false
+hiddenInHomeList: true
 math: true #enable math equations
-comments: true
-postSearch: true #enable search on this post
-draft: false #keep it as false to publish the post
+# showToc: true #if want to include table of contents 
+# tocOpen: false #collapse toc
 ---
+## Example
 
-## Headings
+### Headings
 
 Content here. \
 Newline: \\ \
@@ -22,7 +17,7 @@ Newline: \\ \
 *Italic text.* 
 
 
-## Math Formula
+### Math Formula
 
 
 If you want to include a in-line formula, please use: \( d_t \).\
@@ -42,7 +37,7 @@ V(S_t) &= \mathbb{E}_{A_t} [Q(S_t, A_t)]
 \]
 
 
-## Figure
+### Figure
 
 Please put your figure under `static/` folder. And the path is `"../../" + "path under static folder"`.
 
@@ -52,8 +47,9 @@ You can add a **figure** using Markdown’s `![Alt Text](path)` syntax:
 ```
 ![Example](../../research/DTR.jpg)
 
-## Code blocks
+### Code blocks
 ```r
 a <- 5
 print(a)
 ```
+

@@ -26,7 +26,7 @@
 //     });
 // });
 document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('searchInput');
+    const searchInput = document.getElementById('publication-search');
 
     searchInput.addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase();
@@ -61,4 +61,17 @@ function handleNoResults(sections) {
 
     noResults.style.display = anySectionVisible ? 'none' : 'block';
 }
+
+document.getElementById("publication-type").addEventListener("change", function() {
+    let selectedValue = this.value;
+    let sections = document.querySelectorAll(".section");
+
+    sections.forEach(section => {
+        if (selectedValue === "all") {
+            section.style.display = "block"; // Show all
+        } else {
+            section.style.display = section.id === selectedValue ? "block" : "none";
+        }
+    });
+});
 

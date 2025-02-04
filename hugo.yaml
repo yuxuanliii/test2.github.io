@@ -1,6 +1,6 @@
 baseURL: https://youmisuk.github.io/testwebsite/
 languageCode: en-us
-title: youmilab
+title: YoumiLab
 theme: PaperMod
 
 menu:
@@ -75,11 +75,12 @@ Params:
     researchSections: ["research"]
     #disableThemeToggle: true
     math: true
+    comments: true
 
 
     
     homeInfoParams:
-        Title: "Youmi's Lab @ Teacher's College, Columbia University"
+        Title: "YoumiLab @ Teachers College, Columbia University"
         Content: Led by Dr. Youmi Suk, the lab specializes in the intersection of data science and education. It undertakes various research projects aimed at developing and applying quantitative methods to solve significant and practical problems in the fields of education, social, and behavioral sciences. Our research encompasses several key areas including causal machine learning, quasi-experimental designs, multilevel modeling, optimal treatment regimes, and algorithmic fairness. These focus areas reflect our commitment to advancing methodologies that influence policy and practice in impactful ways.
 
 

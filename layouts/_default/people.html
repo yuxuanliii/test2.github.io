@@ -36,9 +36,17 @@
             <img src="{{ .image | absURL }}" alt="{{ .name }}" class="team-photo">
             <div class="member-info">
                 {{ if .webpage }}
-                <a href={{ .webpage }} class="member-name">{{ .name }}</a>
+                  {{ if .cv }}
+                  <a href={{ .webpage }} class="member-name">{{ .name }}</a><a href="{{ .cv | absURL }}" class="cv-link">[CV]</a>
+                  {{ else }}
+                  <a href={{ .webpage }} class="member-name">{{ .name }}</a>
+                  {{ end }}
                 {{ else }}
-                <p class="member-name">{{ .name }}</p>
+                  {{ if .cv }}
+                  <p class="member-name">{{ .name }}</p><a href="{{ .cv | absURL }}" class="cv-link">[CV]</a>
+                  {{ else }}
+                  <p class="member-name">{{ .name }}</p>
+                  {{ end }}
                 {{ end }}
                 <p class="member-role">{{ .position }}</p>
                 <a href="mailto:{{ .email }}" class="contact-link">Contact</a>

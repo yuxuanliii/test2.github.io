@@ -1,6 +1,6 @@
-- name : "Dynamic Treatment Regime"
+- name : "Optimal Treatment Regime for Personalized Education"
   image : "research/DTR.jpg"
-  projectUrl : "dtr/"
+  projectUrl : "otr/"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
 - name : "Generative AI"
@@ -8,12 +8,12 @@
   projectUrl : "genai/"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
-- name : "Generative AI"
+- name : "Quasi-experimental Designs"
   image : "research/GenAI.jpg"
-  projectUrl : "genai/"
+  projectUrl : "qed/"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
-- name : "Generative AI"
+- name : "Process Data Analysis"
   image : "research/GenAI.jpg"
-  projectUrl : "genai/"
+  projectUrl : "pda/"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
