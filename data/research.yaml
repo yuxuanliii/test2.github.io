@@ -3,14 +3,14 @@
   projectUrl : "otr/"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
-- name : "Generative AI"
-  image : "research/GenAI.jpg"
-  projectUrl : "genai/"
-  description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
-
 - name : "Quasi-experimental Designs"
   image : "research/GenAI.jpg"
   projectUrl : "qed/"
+  description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
+
+- name : "Generative AI"
+  image : "research/GenAI.jpg"
+  projectUrl : "genai/"
   description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
 
 - name : "Process Data Analysis"
