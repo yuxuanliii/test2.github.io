@@ -12,8 +12,8 @@ This repository contains the source code for the YoumiLab website. The website i
     - The **brief introduction** of each research project should be modifed in `data/research.yaml`. The cover images of research projects are placed under `static/research/` folder. Note that the `projectUrl` should be the `[project_name]/` used for the markdown file with all **lowercase letters**.
 - **Posts:** To add a new post, please directly add a markdown file under `content/post/` folder. Please make sure to include `postSearch: true` to include this post in the search function for Posts page.
 - **Publications:** New publications can be added in `data/publication.yaml` under their corresponding sections: `workingPapers, methods or applications`. Note that `paperUrl, PDFUrl, codeUrl, packageUrl` are optional.
-- **Teaching** Content on this page can be directly modified in `content/teaching.md`.
-- **Join us** Content on this page can be directly modified in `content/joinus.md`.
+- **Teaching:** Content on this page can be directly modified in `content/teaching.md`.
+- **Join us:** Content on this page can be directly modified in `content/joinus.md`.
 
 
 
