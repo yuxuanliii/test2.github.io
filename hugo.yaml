@@ -75,7 +75,6 @@ Params:
     researchSections: ["research"]
     #disableThemeToggle: true
     math: true
-    comments: true
 
 
     
