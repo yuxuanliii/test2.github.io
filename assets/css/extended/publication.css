@@ -85,6 +85,10 @@
     cursor: pointer;
 }
 
+.cite-title {
+    color: rgb(0, 0, 0);
+}
+
 .citationText {
     /*overflow: auto; /* Enable scroll if needed */
     display: block;
@@ -95,6 +99,11 @@
     font-size: 15px;
     font-family: "", monospace;
     word-break: normal;
+}
+
+.citationText::-webkit-scrollbar-thumb {
+    background: rgb(231, 231, 231);
+    border: 0px solid rgb(231, 231, 231);
 }
 
 #publication-search {

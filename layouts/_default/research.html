@@ -33,7 +33,9 @@
     <div class="research-grid">
         {{ range .Site.Data.research }}
         <div class="research-project">
+            <div class="project-imagebox">
             <a href={{ .projectUrl }}><img src="{{ .image | absURL }}" alt="{{ .name }}" class="project-image"></a>
+            </div>
             <div class="project-info">
                 <a href={{ .projectUrl }} class="project-name">{{ .name }}</a>
                 <p class="project-descript">{{ .description }}</p>

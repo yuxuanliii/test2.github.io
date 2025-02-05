@@ -10,9 +10,15 @@
     align-items: center; 
     justify-content: center; 
     flex: 0 0 30%; 
-    margin: 10px;
+    margin: 15px;
     text-align: center; 
     /*border: 1px solid black;*/
+}
+
+.project-imagebox {
+    display: flex;
+    height: 200px;
+    align-items: center;
 }
 
 .project-image {
@@ -23,8 +29,13 @@
     object-fit: cover;
 }
 .project-info {
-    padding: 10px;
+    /* padding: 10px; */
+    flex-grow: 1; /* Makes sure all text containers take equal space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
 .project-name {
     font-size: 20px;
     font-weight: bold;
