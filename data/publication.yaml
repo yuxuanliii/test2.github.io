@@ -42,7 +42,7 @@ workingPapers:
 }"
 
 methods:
-  - paperTitle : "Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations."
+  - paperTitle : "Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations"
     publicInfo : "Journal of Educational and Behavioral Statistics"
     publicDate: "2024"
     authors: "<strong>Youmi Suk</strong>, Yongnam Kim"
@@ -58,7 +58,7 @@ methods:
                 publisher={SAGE Publications Sage CA: Los Angeles, CA}
                 }"
     
-  - paperTitle : "Evaluating intersectional fairness in algorithmic decision making using intersectional differential algorithmic functioning."
+  - paperTitle : "Evaluating intersectional fairness in algorithmic decision making using intersectional differential algorithmic functioning"
     publicInfo : "Journal of Educational and Behavioral Statistics"
     publicDate: "2024"
     authors: "<strong>Youmi Suk</strong>, Kyung (Chris) T. Han"
