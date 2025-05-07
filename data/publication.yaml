@@ -2,17 +2,6 @@
 
 workingPapers:
 
-- paperTitle : "Rethinking Item Fairness Using Single World Intervention Graphs"
-    publicInfo : "PsyArXiv"
-    publicDate: "2025"
-    authors: "<strong>Youmi Suk</strong>, Weicong Lyu"
-    PDFUrl : "https://doi.org/10.31234/osf.io/bue62_v1"
-    citeText: "@article{suk2025rethinking,
-  title={Rethinking Item Fairness Using Single World Intervention Graphs},
-  author={Suk, Youmi and Lyu, Weicong},
-  year={2025},
-  publisher={OSF}
-}"
 
 
 - paperTitle : "Using Generative AI for sequential data generation in Monte Carlo simulation studies"
