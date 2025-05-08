@@ -75,8 +75,10 @@ Params:
     researchSections: ["research"]
     #disableThemeToggle: true
     math: true
-    logo: "YoumiLab_logo.png"
-    favicon: "YoumiLab_logo.png"
+    label.icon: "YoumiLab_logo.png"
+
+    assets: 
+        favicon: "YoumiLab_logo.png"
 
 
     
