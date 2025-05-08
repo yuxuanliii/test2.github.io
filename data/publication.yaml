@@ -2,9 +2,7 @@
 
 workingPapers:
 
-
-
-- paperTitle : "Using Generative AI for sequential data generation in Monte Carlo simulation studies"
+  - paperTitle : "Using Generative AI for sequential data generation in Monte Carlo simulation studies"
     publicInfo : "PsyArXiv"
     publicDate: "2025"
     authors: "<strong>Youmi Suk</strong>, <strong>Chenguang Pan</strong>, Ke Yang"
