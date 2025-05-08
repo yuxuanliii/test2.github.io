@@ -91,8 +91,12 @@ Params:
     
     homeInfoParams:
         Title: "YOUMI LAB @ Teachers College, Columbia University"
-        Content: Led by Dr. Youmi Suk, the lab specializes in the intersection of data science and education. It undertakes various research projects aimed at developing and applying quantitative methods to solve significant and practical problems in the fields of education, social, and behavioral sciences. Our research encompasses several key areas including causal machine learning, quasi-experimental designs, multilevel modeling, optimal treatment regimes, and algorithmic fairness. These focus areas reflect our commitment to advancing methodologies that influence policy and practice in impactful ways.
-
-
+        Content: "YOUMI LAB, led by Dr. Youmi Suk, specializes in the intersection of data science and causal inference in education. Our research spans a range of topics, including:  
+    (i) developing modern causal tools for evaluating education programs,  
+    (ii) designing data-driven policy learning for personalized education,  
+    (iii) incorporating process data into program evaluation,  
+    (iv) bridging concepts of test fairness and algorithmic fairness, and  
+    (v) leveraging AI-generated synthetic data for method evaluation.  
+    Through these projects, we are committed to advancing methodologies that shape education policies, programs, and practices in meaningful and impactful ways."
      
         

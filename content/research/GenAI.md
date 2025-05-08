@@ -1,5 +1,6 @@
 ---
 title: 'Generative AI'
+tags: ["GenAI", "sythetic data", "simulation"]
 #date: '2025-01-26T18:14:58-05:00'
 draft: false
 hiddenInHomeList: true
@@ -7,49 +8,12 @@ math: true #enable math equations
 # showToc: true #if want to include table of contents 
 # tocOpen: false #collapse toc
 ---
-## Example
+This project introduces a novel approach for generating synthetic data using generative AI (GenAI) to provide more accurate evaluations of existing and new quantitative methods in real-world settings. Our framework consists of five key steps: (i) pre-processing input data, (ii) training GenAI models on input data, (iii) assessing synthetic data quality, (iv) conducting AI-based simulations, and (v) evaluating simulation results. Our original work on this project can be found below.
 
-### Headings
+### Publications/Working Papers
 
-Content here. \
-Newline: \\ \
-**Bold text.**\
-*Italic text.* 
+- Suk, Y., Pan, C., & Yang, K. (2025). Using Generative AI for sequential data generation in Monte Carlo simulation studies. PsyArXiv. [Preprint]
 
+### Recent Conferences/Seminars
 
-### Math Formula
-
-
-If you want to include a in-line formula, please use: \( d_t \).\
-Formula block: 
-<!-- Please seperate math formula and text. -->
-\[
-A_t = d_t(S_t)
-\]
-
-Multiple lines:
-
-\[
-\begin{aligned}
-Q(S_t, A_t) &= R_t + \gamma \max_{a'} Q(S_{t+1}, a') \\
-V(S_t) &= \mathbb{E}_{A_t} [Q(S_t, A_t)]
-\end{aligned}
-\]
-
-
-### Figure
-
-Please put your figure under `static/` folder. And the path is `"../../" + "path under static folder"`.
-
-You can add a **figure** using Markdown’s `![Alt Text](path)` syntax:  
-```md
-![Example](../../research/DTR.jpg)
-```
-![Example](../../research/DTR.jpg)
-
-### Code blocks
-```r
-a <- 5
-print(a)
-```
-
+- Suk, Y., & Yang, K. (2024, July). Using Conditional Tabular Generative Adversarial Networks for process data generation in Monte Carlo simulation studies. The International Meeting of Psychometric Society (IMPS), Prague, Czech Republic.

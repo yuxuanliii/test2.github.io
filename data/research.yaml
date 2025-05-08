@@ -1,19 +1,24 @@
 - name : "Optimal Treatment Regimes for Personalized Education"
   image : "research/dtr.jpg"
   projectUrl : "otr/"
-  description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
+  description: 
 
 - name : "Quasi-experimental Designs"
   image : "research/qed.jpg"
   projectUrl : "qed/"
-  description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
+  description: 
 
 - name : "Generative AI"
   image : "research/genai.jpg"
   projectUrl : "genai/"
-  description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
+  description: 
 
 - name : "Process Data Analysis"
   image : "research/pda.jpg"
   projectUrl : "pda/"
-  description: "DescriptionsDescriptionsDescriptionsDescriptionsDescriptionsDescriptions"
+  description: 
+
+- name : "Test Fairness and Algorithmic Fairness"
+  image : "research/fair.jpg"
+  projectUrl : "fair/"
+  description: 
