@@ -1,4 +1,4 @@
-baseURL: https://youmisuk.github.io/testwebsite/
+baseURL: https://youmilab.github.io/
 languageCode: en-us
 title: YoumiLab
 theme: PaperMod
@@ -77,9 +77,9 @@ Params:
     math: true
 
     label:
-        text: ' '
-        icon: "YoumiLab_logo.png"
-        iconHeight: 50
+        text: 'YOUMI LAB'
+        #icon: "YoumiLab_logo.png"
+        #iconHeight: 50
     
 
     
@@ -90,7 +90,7 @@ Params:
 
     
     homeInfoParams:
-        Title: "YOUMI LAB @ Teachers College, Columbia University"
+        Title: "YOUMI LAB"
         Content: "YOUMI LAB, led by Dr. Youmi Suk, specializes in the intersection of data science and causal inference in education. Our research spans a range of topics, including:  
     (i) developing modern causal tools for evaluating education programs,  
     (ii) designing data-driven policy learning for personalized education,  
