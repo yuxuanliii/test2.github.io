@@ -144,3 +144,7 @@
 {{- end }}
 
 <script defer language="javascript" type="text/javascript"  src="{{ "publication/publication.js" | urlize | relURL }}"></script>
+
+{{ $slider := resources.Get "js/slider.js" | minify | fingerprint }}
+<script src="{{ $slider.Permalink }}" integrity="{{ $slider.Data.Integrity }}"></script>
+

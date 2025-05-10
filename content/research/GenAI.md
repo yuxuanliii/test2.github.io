@@ -1,6 +1,6 @@
 ---
 title: 'Generative AI'
-tags: ["GenAI", "sythetic data", "simulation"]
+tags: ["GenAI", "Sythetic Data", "Simulation"]
 #date: '2025-01-26T18:14:58-05:00'
 draft: false
 hiddenInHomeList: true
@@ -12,7 +12,7 @@ This project introduces a novel approach for generating synthetic data using gen
 
 ### Publications/Working Papers
 
-- Suk, Y., Pan, C., & Yang, K. (2025). Using Generative AI for sequential data generation in Monte Carlo simulation studies. PsyArXiv. [Preprint]
+- Suk, Y., Pan, C., & Yang, K. (2025). Using Generative AI for sequential data generation in Monte Carlo simulation studies. PsyArXiv. [[Preprint](https://doi.org/10.31234/osf.io/7rd86_v1)]
 
 ### Recent Conferences/Seminars
 

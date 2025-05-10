@@ -2,7 +2,7 @@
 
 workingPapers:
 
-  - paperTitle : "Rethinking Item Fairness Using Single World Intervention Graphs"
+  - paperTitle : "Rethinking item fairness using single world intervention graphs"
     publicInfo : "PsyArXiv"
     publicDate: "2025"
     authors: "<strong>Youmi Suk</strong>, Weicong Lyu"
@@ -15,7 +15,7 @@ workingPapers:
 }"
 
 
-  - paperTitle : "Using Generative AI for sequential data generation in Monte Carlo simulation studies"
+  - paperTitle : "Using generative AI for sequential data generation in Monte Carlo simulation studies"
     publicInfo : "PsyArXiv"
     publicDate: "2025"
     authors: "<strong>Youmi Suk</strong>, <strong>Chenguang Pan</strong>, Ke Yang"
@@ -27,7 +27,7 @@ workingPapers:
   publisher={OSF}
 }"
 
-  - paperTitle : "Causal Mediation and Functional Outcome Analysis with Process Data"
+  - paperTitle : "Causal mediation and functional outcome analysis with process data"
     publicInfo : "PsyArXiv"
     publicDate: "2025"
     authors: "<strong>Youmi Suk</strong>, Chan Park (Equal Contribution)"
@@ -98,7 +98,7 @@ methods:
                 publisher={SAGE Publications Sage CA: Los Angeles, CA}
               }"
 
-  - paperTitle : "Regression discontinuity designs in education: A practitioner’s guide"
+  - paperTitle : "Regression discontinuity designs in education: a practitioner’s guide"
     publicInfo : "Asia Pacific Education Review"
     publicDate: "2024"
     authors: "<strong>Youmi Suk</strong>"

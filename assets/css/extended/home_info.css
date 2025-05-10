@@ -1,0 +1,93 @@
+.main-page {
+  background-color: #ffffff; /* or any other color */
+}
+
+.home-page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background: white; */
+  padding: 0px;
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.lab-title-container {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* space between logo and title */
+  justify-content: center; /* center horizontally */
+  margin-bottom: 30px;
+}
+
+.lab-logo {
+  height: 50px; /* or any height you prefer */
+  width: auto;
+}
+
+.lab-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.home-page-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.home-page-content-row {
+  display: flex;
+  justify-content: space-between;  /* makes text left, image right */
+  gap: 10px;                        /* more breathing room */
+  align-items: flex-start;
+}
+
+.home-page-text-box {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 500px;
+  height: 300px;
+  margin: 20px auto;  /* ***********change the position of images************ */
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 450px;
+  height: 350px;
+  border-radius: 8px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slider-controls {
+  margin-top: 10px;
+}
+
+.slider-controls button {
+  padding: 8px 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.news-box {
+  /* background: rgb(230, 230, 230); */
+  background: var(--news);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+

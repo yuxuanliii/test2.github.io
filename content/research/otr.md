@@ -13,8 +13,8 @@ This project aims to design personalized, data-driven policy recommendations for
 This work is supported by NSF’s EHR Core Research Building Capacity in STEM Education Research (ECR: BCSER) program.
 
 ### Publications/Working Papers
--	Suk, Y., Park, C., Pan, C., & Kim, K. (2024). Fair and robust estimation of heterogeneous treatment effects for optimal policies in multilevel studies. *PsyArXiv.* [[Preprint](http://example.com)] [[R Code](http://example.com)]
--	Suk, Y., & Park, C. (2023). Designing optimal, data-driven policies from multisite randomized trials. *Psychometrika, 88.* 1171-1196. [[Journal Article](http://example.com)] [[Preprint](http://example.com)] [[R Code](http://example.com)]
+-	Suk, Y., Park, C., Pan, C., & Kim, K. (2024). Fair and robust estimation of heterogeneous treatment effects for optimal policies in multilevel studies. *PsyArXiv.* [[Preprint](https://doi.org/10.31234/osf.io/xz3jw)] [[R Code](https://github.com/youmisuk/FairCATE-Multilevel)]
+-	Suk, Y., & Park, C. (2023). Designing optimal, data-driven policies from multisite randomized trials. *Psychometrika, 88.* 1171-1196. [[Journal Article](https://doi.org/10.1007/s11336-023-09937-2)] [[Preprint](https://doi.org/10.31234/osf.io/me5gb)] [[R Code](https://github.com/youmisuk/multisiteOTR)]
 
 ### Recent Conferences/Seminars
 - Pan, C. & Suk, Y. (2025, May). Designing realistic and interpretable optimal treatment regimes for personalized education.  The American Causal Inference Conference (ACIC), Detroit, MI, U.S.

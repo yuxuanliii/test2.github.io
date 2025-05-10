@@ -1,6 +1,6 @@
 baseURL: https://youmilab.github.io/
 languageCode: en-us
-title: YoumiLab
+title: YOUMI LAB
 theme: PaperMod
 
 menu:
@@ -80,23 +80,18 @@ Params:
         text: 'YOUMI LAB'
         #icon: "YoumiLab_logo.png"
         #iconHeight: 50
-    
 
-    
     assets: 
-        favicon: "YoumiLab_logo.png"
+        favicon: "logo/LabLogo.png"
         
-
-
-    
     homeInfoParams:
         Title: "YOUMI LAB"
-        Content: "YOUMI LAB, led by Dr. Youmi Suk, specializes in the intersection of data science and causal inference in education. Our research spans a range of topics, including:  
-    (i) developing modern causal tools for evaluating education programs,  
-    (ii) designing data-driven policy learning for personalized education,  
-    (iii) incorporating process data into program evaluation,  
-    (iv) bridging concepts of test fairness and algorithmic fairness, and  
-    (v) leveraging AI-generated synthetic data for method evaluation.  
-    Through these projects, we are committed to advancing methodologies that shape education policies, programs, and practices in meaningful and impactful ways."
+    #     Content: "YOUMI LAB, led by Dr. Youmi Suk, specializes in the intersection of data science and causal inference in education. Our research spans a range of topics, including:  
+    # (i) developing modern causal tools for evaluating education programs,  
+    # (ii) designing data-driven policy learning for personalized education,  
+    # (iii) incorporating process data into program evaluation,  
+    # (iv) bridging concepts of test fairness and algorithmic fairness, and  
+    # (v) leveraging AI-generated synthetic data for method evaluation.  
+    # Through these projects, we are committed to advancing methodologies that shape education policies, programs, and practices in meaningful and impactful ways."
      
         

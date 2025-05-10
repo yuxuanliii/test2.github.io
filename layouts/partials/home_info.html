@@ -1,4 +1,4 @@
-{{- with site.Params.homeInfoParams }}
+<!-- {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
     <header class="entry-header">
         <h1>{{ .Title | markdownify }}</h1>
@@ -10,10 +10,76 @@
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
 </article>
-{{- end -}}
+{{- end -}} -->
 
 
-<div id="news">
+    <!-- <header class="page-header">
+        <h1>
+            {{ .Title }}
+            {{- if (.Param "ShowRssButtonInSectionTermList") }}
+            {{- $rss := (.OutputFormats.Get "rss") }}
+            {{- if (eq .Kind `page`) }}
+            {{- $rss = (.Parent.OutputFormats.Get "rss") }}
+            {{- end }}
+            {{- with $rss }}
+            <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" height="23">
+                <path d="M4 11a9 9 0 0 1 9 9" />
+                <path d="M4 4a16 16 0 0 1 16 16" />
+                <circle cx="5" cy="19" r="1" />
+                </svg>
+            </a>
+            {{- end }}
+            {{- end }}
+        </h1>
+        {{- if .Description }}
+        <div class="post-description">
+            {{ .Description }}
+        </div>
+        {{- end }}
+    </header> -->
+
+<div class="home-page-container">
+    <div class="lab-title-container">
+        <h1 class="lab-title">YOUMI LAB</h1>
+        <img src="/logo/labLogo_nText.png" alt="YOUMI LAB Logo" class="lab-logo">
+    </div>
+
+    <div class="home-page-content-row">
+        <div class="home-page-text-box">
+            <p>
+            <strong>YOUMI LAB</strong>, led by <strong><a href="https://youmisuk.com/" style="color: #4787cb;">Dr. Youmi Suk</a></strong>, specializes in the intersection of data science and causal inference in education. Our research spans a range of topics, including: <br>
+    (i) developing modern causal tools for evaluating education programs, <br>
+    (ii) designing data-driven policy learning for personalized education, <br>
+    (iii) Incorporating process data into program evaluation, <br>
+    (iv) bridging concepts of test fairness and algorithmic fairness, and <br>
+    (v) leveraging AI-generated synthetic data for method evaluation. <br>
+    <br>
+    Through these projects, we are committed to advancing methodologies that shape education policies, programs, and practices in meaningful and impactful ways.
+            </p>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+                <img src="photos/Office.jpeg" class="slide active">
+                <img src="photos/AERA2025.jpg" class="slide">
+                <img src="photos/TCPsych_cg.jpeg" class="slide">
+            </div>
+
+            <div class="slider-controls">
+                <button onclick="prevSlide()">❮</button>
+                <button onclick="nextSlide()">❯</button>
+            </div>
+        </div>
+    </div>
+  </div>
+    
+<br>
+<br>
+
+
+<div class="news-box" id="news">
     <h2>News</h2>
     <br>
     {{ range .Site.Data.news }}
@@ -27,8 +93,6 @@
             {{ end }}
         </li>
     </ul>
-
     {{end}}
+    
 </div>
-    
-    

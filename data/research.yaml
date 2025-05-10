@@ -1,24 +1,24 @@
 - name : "Optimal Treatment Regimes for Personalized Education"
   image : "research/dtr.jpg"
   projectUrl : "otr/"
-  description: 
+  description: "#Policy Learning #Heterogenous Treatment Effects"
 
 - name : "Quasi-experimental Designs"
   image : "research/qed.jpg"
   projectUrl : "qed/"
-  description: 
+  description: "#Regression Discontinuity #Evidence Factors #Multilevel Causal Inference"
 
 - name : "Generative AI"
   image : "research/genai.jpg"
   projectUrl : "genai/"
-  description: 
+  description: "#GenAI #Synthetic Data #Simulations"
 
 - name : "Process Data Analysis"
-  image : "research/pda.jpg"
+  image : "research/pda.png"
   projectUrl : "pda/"
-  description: 
+  description: "#Functional Data #Digital Assessments #Extended Time"
 
 - name : "Test Fairness and Algorithmic Fairness"
   image : "research/fair.jpg"
   projectUrl : "fair/"
-  description: 
+  description: "#DIF #DAF #Causal DIFs"

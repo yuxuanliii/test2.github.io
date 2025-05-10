@@ -1,6 +1,6 @@
 ---
 title: 'Process Data Analysis' #change title here
-tags: ["functional data", "digital assessment", "extended time"]
+tags: ["Functional Data", "Digital Assessment", "Extended Time"]
 #date: '2024-01-26T18:14:40-05:00'
 draft: false
 hiddenInHomeList: true
@@ -16,9 +16,9 @@ This research examines how to incorporate process data for research on measureme
 These projects are supported in part by TC Provost’s Faculty Collaboration Funds.
 
 ### Publications/Working Papers
--	Suk, Y., & Park, C. (2025). Causal mediation and functional outcome analysis with process data. PsyArXiv. (Equal Contribution) [Preprint]
--	Lee, Y., & Suk, Y. (2024). Evidence factors in fuzzy regression discontinuity designs with sequential treatment assignments. PsyArXiv. [Preprint]
--	Suk, Y., & Kim, Y. (2024). Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations. Journal of Educational and Behavioral Statistics. [Journal Article] [Preprint] [R Code]
+-	Suk, Y., & Park, C. (2025). Causal mediation and functional outcome analysis with process data. PsyArXiv. (Equal Contribution) [[Preprint](https://osf.io/preprints/psyarxiv/xhwv4_v1)]
+-	Lee, Y., & Suk, Y. (2024). Evidence factors in fuzzy regression discontinuity designs with sequential treatment assignments. PsyArXiv. [[Preprint](https://osf.io/preprints/psyarxiv/29tp4_v1)]
+-	Suk, Y., & Kim, Y. (2024). Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations. Journal of Educational and Behavioral Statistics. [[Journal Article](https://journals.sagepub.com/doi/10.3102/10769986241268902)] [[Preprint](https://osf.io/preprints/psyarxiv/sa96g)] [[R Code](https://github.com/youmisuk/fuzzyRD_MG)]
 
 ### Recent Conferences/Seminars
 -	Suk, Y., & Park, C. (2025, May). Causal mediation and functional outcome analysis with process data.  The American Causal Inference Conference (ACIC), Detroit, MI, U.S.
