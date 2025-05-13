@@ -84,7 +84,7 @@ Params:
         #iconHeight: 50
 
     assets: 
-        favicon: "logo/LabLogo.png"
+        favicon: "logo/labLogo.png"
         
     homeInfoParams:
         Title: "YOUMI LAB"
