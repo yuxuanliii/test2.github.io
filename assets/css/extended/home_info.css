@@ -42,6 +42,13 @@
   align-items: flex-start;
 }
 
+/* Stack vertically on small screens */
+@media (max-width: 768px) {
+  .home-page-content-row {
+    flex-direction: column;
+  }
+}
+
 .home-page-text-box {
   flex: 1;
   font-size: 18px;
@@ -50,8 +57,9 @@
 
 .slider-container {
   position: relative;
+  width: 100%;
   max-width: 500px;
-  height: 300px;
+  height: auto;
   margin: 20px auto;  /* ***********change the position of images************ */
   text-align: center;
 }
