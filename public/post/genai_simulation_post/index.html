@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Making Simulations Smarter with Generative AI | YOUMI LAB</title>
+<meta name="keywords" content="">
+<meta name="description" content="This post introduces a generative AI framework that creates realistic synthetic data for simulation studies, enabling smarter performance evaluations of statistical methods.">
+<meta name="author" content="Chenguang Pan">
+<link rel="canonical" href="http://localhost:1313/post/genai_simulation_post/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.eced7904e5330750d527c2d8820019e3754b3ac089eee6582971f4d446498936.css" integrity="sha256-7O15BOUzB1DVJ8LYggAZ43VLOsCJ7uZYKXH01EZJiTY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/logo/LabLogo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/genai_simulation_post/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="YOUMI LAB (Alt + H)">YOUMI LAB</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/#news" title="News">
+                    <span>News</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/people/" title="People">
+                    <span>People</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/research/" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/publication/" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/teaching/" title="Teaching">
+                    <span>Teaching</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/joinus/" title="Join us">
+                    <span>Join us</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Making Simulations Smarter with Generative AI
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2025-05-11 12:00:00 +0000 UTC'>May 11, 2025</span>&nbsp;·&nbsp;Chenguang Pan
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#" aria-label="Why Do Simulations Matter?">Why Do Simulations Matter?</a></li>
+                <li>
+                    <a href="#" aria-label="The Problem with Traditional Simulations">The Problem with Traditional Simulations</a></li>
+                <li>
+                    <a href="#" aria-label="Enter Generative AI">Enter Generative AI</a></li>
+                <li>
+                    <a href="#" aria-label="Real Data, Real Behavior">Real Data, Real Behavior</a></li>
+                <li>
+                    <a href="#" aria-label="Our 5-Step GenAI Simulation Framework">Our 5-Step GenAI Simulation Framework</a></li>
+                <li>
+                    <a href="#" aria-label="What Did We Learn?">What Did We Learn?</a></li>
+                <li>
+                    <a href="#" aria-label="References">References</a></li>
+                <li>
+                    <a href="#" aria-label="Our Paper">Our Paper</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 style="font-size: 32px;">Why Do Simulations Matter?</h2>
+<p>If you’ve ever tested a new idea in a sandbox before deploying it in the real world, you’ve used the same logic as a simulation study. In data science, simulation studies act like virtual laboratories for testing whether a proposed method works.</p>
+<p>But what if this virtual lab doesn’t reflect real-world conditions? Simulations often rely on overly simplified, clean, and smooth data. These idealized setups may lead researchers to overestimate how well a method will work in the wild.</p>
+<h2 style="font-size: 32px;">The Problem with Traditional Simulations</h2>
+<p>Traditional Monte Carlo simulations often use handcrafted data-generating processes (DGPs) with neat bell-shaped distributions and simple rule-based logic. In reality, data is messy, nonlinear, and packed with complex dependencies.</p>
+<p>This mismatch introduces a real risk: a method that performs well under artificial assumptions might fail in practice. (See <a href="https://osf.io/preprints/psyarxiv/7rd86_v1">our paper’s</a> comparison of Figure 5 vs. Figure S6.)</p>
+<p>Simulation studies usually serve two purposes:</p>
+<ul>
+<li>Predicting how well a method will perform,</li>
+<li>Assessing how accurately it can recover true parameters.</li>
+</ul>
+<p>Our method focuses on the first: performance evaluation under realistic conditions.</p>
+<h2 style="font-size: 32px;">Enter Generative AI</h2>
+<p>We propose a new simulation framework powered by <strong>Generative AI (GenAI)</strong> that learns from real-world data and generates <strong>realistic synthetic datasets</strong> for simulation studies.</p>
+<p>If you&rsquo;ve seen tools like ChatGPT or DALL·E in action, you already know how GenAI can create text or images based on learned patterns. We’re doing the same for data—but instead of text or art, we generate synthetic datasets that mirror real user behaviors (like how students interact with digital tests).</p>
+<p>We use this synthetic data to evaluate a feature-extraction method proposed by Tang et al. (2020), comparing its performance on GenAI-based simulations versus traditional rule-based ones.</p>
+<h2 style="font-size: 32px;">Real Data, Real Behavior</h2>
+<p>Our focus is on <strong>process data</strong> which are detailed records of how users interact with digital platforms. For example, when a student takes an online test, their interaction sequence might be:</p>
+<p><code>START → CLICK → CLICK → RETURN BUTTON → MARK BUTTON → CLICK → CHECKBOX_TAB → END</code></p>
+<p>We use log data from the <strong>PIAAC international assessment</strong> and train two GenAI models:</p>
+<ul>
+<li><strong>CTGAN</strong> (Xu et al., 2019): A GAN-based model for structured tabular data</li>
+<li><strong>CPAR</strong> (Zhang et al., 2022): A neural network model for sequential categorical data</li>
+</ul>
+<p>The goal is to generate synthetic action sequences that closely mimic real behaviors.</p>
+<h2 style="font-size: 32px;">Our 5-Step GenAI Simulation Framework</h2>
+<p>We designed a general-purpose simulation framework:</p>
+<ol>
+<li><strong>Preprocess the data:</strong> Encode variables for model training.</li>
+<li><strong>Train GenAI models:</strong> Learn realistic patterns from observed data.</li>
+<li><strong>Assess data quality:</strong> Propose new evaluation metrics for sequential data:
+    <ul>
+        <li><strong>TVC-n:</strong> N-gram distribution similarity</li>
+        <li><strong>Recall-n / Precision-n:</strong> How well synthetic data captures true patterns</li>
+    </ul>
+</li>
+<li><strong>Run simulations:</strong> Test statistical methods on GenAI-generated data.</li>
+<li><strong>Evaluate method performance:</strong> Compare results to those from traditional simulations.</li>
+</ol>
+<h2 style="font-size: 32px;">What Did We Learn?</h2>
+<p>GenAI-based simulations consistently generate more realistic synthetic data than traditional handcrafted DGPs. As a result, they offer <strong>more accurate insights</strong> into how statistical methods will perform on real-world data.</p>
+<p>This approach helps bridge the gap between theory and practice—making simulations not only smarter, but more useful.</p>
+<h2 style="font-size: 32px;">References</h2>
+<ul>
+<li>Xu, L., Skoularidou, M., Cuesta-Infante, A., &amp; Veeramachaneni, K. (2019). Modeling Tabular Data using Conditional GAN. [<a href="https://arxiv.org/abs/1907.00503">Paper</a>]</li>
+<li>Zhang, K., Patki, N., &amp; Veeramachaneni, K. (2022). Sequential models in the synthetic data vault. [<a href="https://arxiv.org/abs/2207.14406">Paper</a>]</li>
+<li>Tang, X., Wang, Z., He, Q., Liu, J., &amp; Ying, Z. (2020). Latent feature extraction for process data via multidimensional scaling. Psychometrika, 85(2), 378-397.[<a href="https://www.cambridge.org/core/journals/psychometrika/article/abs/latent-feature-extraction-for-process-data-via-multidimensional-scaling/FF76AA880620E0C91A7B43B5B1C642FE">Paper</a>]</li>
+</ul>
+<h2 style="font-size: 32px;">Our Paper</h2>
+<ul>
+<li>Suk, Y., Pan, C., &amp; Yang, K. (2025). Using Generative AI for Sequential Data Generation in Monte Carlo Simulation Studies. [<a href="https://osf.io/preprints/psyarxiv/7rd86_v1">Preprint</a>]</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer><script src="https://utteranc.es/client.js"
+        repo="youmilab/youmilab.github.io"
+        issue-term="pathname"
+        label="comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">YOUMI LAB</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+<script defer language="javascript" type="text/javascript"  src="/publication/publication.js"></script>
+
+
+<script src="http://localhost:1313/js/slider.min.1d37e5565a251bd3f5e866fd549b6ffd41991de03a67c6bf28b9b129c07b39d9.js" integrity="sha256-HTflVlolG9P16Gb9VJtv/UGZHeA6Z8a/KLmxKcB7Odk="></script>
+
+</body>
+
+</html>

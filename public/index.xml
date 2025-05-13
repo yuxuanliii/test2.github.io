@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>YOUMI LAB</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on YOUMI LAB</description>
+    <generator>Hugo -- 0.147.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 May 2025 12:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Simulations Smarter with Generative AI</title>
+      <link>http://localhost:1313/post/genai_simulation_post/</link>
+      <pubDate>Sun, 11 May 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/genai_simulation_post/</guid>
+      <description>This post introduces a generative AI framework that creates realistic synthetic data for simulation studies, enabling smarter performance evaluations of statistical methods.</description>
+    </item>
+    <item>
+      <title>Developing Personalized Education using Optimal Treatment Regimes</title>
+      <link>http://localhost:1313/post/dtr/</link>
+      <pubDate>Sat, 10 May 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/dtr/</guid>
+      <description>Brief summary of the post (optional)</description>
+    </item>
+    <item>
+      <title>Example</title>
+      <link>http://localhost:1313/post/example/</link>
+      <pubDate>Mon, 03 Feb 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/example/</guid>
+      <description>Brief summary of the post (optional)</description>
+    </item>
+    <item>
+      <title>Faculty and Students</title>
+      <link>http://localhost:1313/people/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Generative AI</title>
+      <link>http://localhost:1313/research/genai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/genai/</guid>
+      <description>&lt;p&gt;This project introduces a novel approach for generating synthetic data using generative AI (GenAI) to provide more accurate evaluations of existing and new quantitative methods in real-world settings. Our framework consists of five key steps: (i) pre-processing input data, (ii) training GenAI models on input data, (iii) assessing synthetic data quality, (iv) conducting AI-based simulations, and (v) evaluating simulation results. Our original work on this project can be found below.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Join us</title>
+      <link>http://localhost:1313/joinus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/joinus/</guid>
+      <description>&lt;h3 id=&#34;prospective-students&#34;&gt;Prospective Students&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ph.D. Students&lt;/strong&gt;&lt;br&gt;
+To apply for Ph.D. in Measurement &amp;amp; Evaluation program, please email Prof. Youmi Suk.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Master’s and Undergraduate Students&lt;/strong&gt;&lt;br&gt;
+To apply for a research position, please email Prof. Youmi Suk.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;contact&#34;&gt;Contact&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Location:&lt;/strong&gt; 552 Grace Dodge Hall, 525 West 120th Street, New York, NY 10027&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:ysuk@tc.columbia.edu&#34;&gt;ysuk@tc.columbia.edu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Optimal Treatment Regimes for Personalized Education</title>
+      <link>http://localhost:1313/research/otr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/otr/</guid>
+      <description>&lt;p&gt;This project aims to design personalized, data-driven policy recommendations for education programs, for example, math course-taking plans in high school. We leverage recent advances in personalized medicine, known as optimal (dynamic) treatment regimes, to recommend the best treatment option for each individual in a way that maximizes a desirable educational outcome. In addition to optimizing utility, we incorporate critical considerations such as feasibility, interpretability, and fairness into the recommendation models.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Posts</title>
+      <link>http://localhost:1313/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Process Data Analysis</title>
+      <link>http://localhost:1313/research/pda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/pda/</guid>
+      <description>&lt;p&gt;This research examines how to incorporate process data for research on measurement and causal inference. Specifically, we extplore:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(i)	evaluating testing accommodations using process data from large-scale educational assessments and high-stakes testing,&lt;/li&gt;
+&lt;li&gt;(ii)	measuring test-taking effort using process data from the same settings, and&lt;/li&gt;
+&lt;li&gt;(iii)	developing causal inference methods with process data in a functional format.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These projects are supported in part by TC Provost’s Faculty Collaboration Funds.&lt;/p&gt;
+&lt;h3 id=&#34;publicationsworking-papers&#34;&gt;Publications/Working Papers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Suk, Y., &amp;amp; Park, C. (2025). Causal mediation and functional outcome analysis with process data. PsyArXiv. (Equal Contribution) [&lt;a href=&#34;https://osf.io/preprints/psyarxiv/xhwv4_v1&#34;&gt;Preprint&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Lee, Y., &amp;amp; Suk, Y. (2024). Evidence factors in fuzzy regression discontinuity designs with sequential treatment assignments. PsyArXiv. [&lt;a href=&#34;https://osf.io/preprints/psyarxiv/29tp4_v1&#34;&gt;Preprint&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Suk, Y., &amp;amp; Kim, Y. (2024). Fuzzy regression discontinuity designs with multiple control groups under one-sided noncompliance: Evaluating extended time accommodations. Journal of Educational and Behavioral Statistics. [&lt;a href=&#34;https://journals.sagepub.com/doi/10.3102/10769986241268902&#34;&gt;Journal Article&lt;/a&gt;] [&lt;a href=&#34;https://osf.io/preprints/psyarxiv/sa96g&#34;&gt;Preprint&lt;/a&gt;] [&lt;a href=&#34;https://github.com/youmisuk/fuzzyRD_MG&#34;&gt;R Code&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;recent-conferencesseminars&#34;&gt;Recent Conferences/Seminars&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Suk, Y., &amp;amp; Park, C. (2025, May). Causal mediation and functional outcome analysis with process data.  The American Causal Inference Conference (ACIC), Detroit, MI, U.S.&lt;/li&gt;
+&lt;li&gt;Suk, Y., &amp;amp; Park, C. (2025, Apr.). Causal mediation and functional outcome analysis with process data for program evaluation. The National Council on Measurement in Education (NCME), Denver, CO, U.S.&lt;/li&gt;
+&lt;li&gt;Suk, Y., &amp;amp; Lee, Y. (2024, Sep.). Evidence factors in fuzzy regression discontinuity designs with multiple control groups for evaluating extended time accommodations.  The Society for Research on Educational Effectiveness (SREE), Baltimore, MD, U.S&lt;/li&gt;
+&lt;li&gt;Suk, Y., &amp;amp; Lee, Y. (2024, May). Evidence factors in fuzzy regression discontinuity designs with multiple control groups for evaluating testing accommodations. The American Causal Inference Conference (ACIC), Seattle, WA, U.S.&lt;/li&gt;
+&lt;li&gt;Suk, Y., &amp;amp; Kim, Y. (2024, May). Blessing of multiple control groups in fuzzy regression discontinuity designs: Evaluating extended time accommodations. Paper presented at the American Causal Inference Conference (ACIC), Seattle, WA, U.S. (2024 ACIC Tom Ten Have Award with Honorable Mention)&lt;/li&gt;
+&lt;li&gt;Suk, Y., &amp;amp; Kim, Y. (2023, Sep.). Fuzzy regression discontinuity designs with multiple control groups for evaluating extended time accommodations. The Society for Research on Educational Effectiveness (SREE), Arlington, VA, U.S.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/publication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quasi-experimental Designs</title>
+      <link>http://localhost:1313/research/qed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/qed/</guid>
+      <description>&lt;p&gt;This line of research focuses on developing and applying causal inference methods in educational settings, by integrating methodologies from quasi-experimental designs, machine learning, and multilevel modeling. Ongoing projects include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)	advancing regression discontinuity designs tailored to educational settings and integrating them with other quasi-experimental designs&lt;/li&gt;
+&lt;li&gt;(2)	developing robust machine learning for causal inference in multilevel observational studies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These projects have been supported by an AERA Division D grant and an AERA-NSF grant for early-career scholars.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Teaching</title>
+      <link>http://localhost:1313/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/</guid>
+      <description>&lt;h3 id=&#34;courses&#34;&gt;Courses&lt;/h3&gt;
+&lt;h4 id=&#34;at-teachers-college-columbia-university&#34;&gt;At Teachers College, Columbia University,&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;HUDM 5133 Causal Inference for Program Evaluation&lt;/em&gt; - Spring 2025&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;HUDM 5001 Programming for Data Science&lt;/em&gt; - Fall 2024&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;HUDM 5122 Applied Regression Analysis&lt;/em&gt; - Fall 2024, Spring 2024, Fall 2023, Fall 2022&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;HUDM 5199 Programming for Data Science&lt;/em&gt; - Fall 2023, Spring 2022&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;at-university-of-virginia&#34;&gt;At University of Virginia,&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;DS 2001 Programming for Data Science&lt;/em&gt; - Spring 2022&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;DS 3003 Communicating with Data&lt;/em&gt; - Spring 2022, Fall 2021&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;at-university-of-wisconsin-madison&#34;&gt;At University of Wisconsin-Madison,&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;EDPSY 763 Regression Models in Education&lt;/em&gt; - Fall 2019, Spring 2020, Fall 2020&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Test Fairness and Algorithmic Fairness</title>
+      <link>http://localhost:1313/research/fair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/fair/</guid>
+      <description>&lt;p&gt;This line of research examines whether established definitions of test fairness can inform algorithmic fairness (and vice versa), and how fairness considerations can be integrated into causal inference methods. Ongoing projects include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(i) exploring how fairness concepts from psychometrics (emerging in the 1960s) can inform modern algorithmic fairness (emerging in the 2010s).&lt;/li&gt;
+&lt;li&gt;(ii) developing a causal framework for item fairness using single world intervention graphs,&lt;/li&gt;
+&lt;li&gt;(iii) developing data-driven policy learning methods under fairness considerations in multilevel data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These projects are supported in part by an NSF grant.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

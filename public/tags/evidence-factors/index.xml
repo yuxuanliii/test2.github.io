@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Evidence Factors on YOUMI LAB</title>
+    <link>http://localhost:1313/tags/evidence-factors/</link>
+    <description>Recent content in Evidence Factors on YOUMI LAB</description>
+    <generator>Hugo -- 0.147.2</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/evidence-factors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quasi-experimental Designs</title>
+      <link>http://localhost:1313/research/qed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/qed/</guid>
+      <description>&lt;p&gt;This line of research focuses on developing and applying causal inference methods in educational settings, by integrating methodologies from quasi-experimental designs, machine learning, and multilevel modeling. Ongoing projects include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)	advancing regression discontinuity designs tailored to educational settings and integrating them with other quasi-experimental designs&lt;/li&gt;
+&lt;li&gt;(2)	developing robust machine learning for causal inference in multilevel observational studies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These projects have been supported by an AERA Division D grant and an AERA-NSF grant for early-career scholars.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
