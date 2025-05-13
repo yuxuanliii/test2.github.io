@@ -9,21 +9,31 @@
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    flex: 0 0 30%; 
-    margin: 15px;
+    flex: 1 1 30%; 
+    max-width: 300px;
+    /* margin: 15px; */
+    margin: clamp(5px, 2vw, 15px);
     text-align: center; 
     /*border: 1px solid black;*/
 }
 
+@media (max-width: 768px) {
+  .research-project {
+    flex: 1 1 100%;     /* Full width on mobile */
+    max-width: 100%;    /* Override the cap */
+  }
+}
+
 .project-imagebox {
     display: flex;
-    height: 200px;
+    /* height: 200px; */
     align-items: center;
 }
 
 .project-image {
     width: 100%; 
     height: auto;
+    max-height: 200px; 
     /*border-radius: 50%; /* Circular images */
     margin-bottom: 10px;
     object-fit: cover;
