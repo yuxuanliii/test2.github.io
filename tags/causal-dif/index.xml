@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Causal DIF on YOUMI LAB</title>
+    <link>https://yuxuanliii.github.io/test2.github.io/tags/causal-dif/</link>
+    <description>Recent content in Causal DIF on YOUMI LAB</description>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en-us</language>
+    <atom:link href="https://yuxuanliii.github.io/test2.github.io/tags/causal-dif/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Fairness and Algorithmic Fairness</title>
+      <link>https://yuxuanliii.github.io/test2.github.io/research/fair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yuxuanliii.github.io/test2.github.io/research/fair/</guid>
+      <description>&lt;p&gt;This line of research examines whether established definitions of test fairness can inform algorithmic fairness (and vice versa), and how fairness considerations can be integrated into causal inference methods. Ongoing projects include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(i) exploring how fairness concepts from psychometrics (emerging in the 1960s) can inform modern algorithmic fairness (emerging in the 2010s).&lt;/li&gt;
+&lt;li&gt;(ii) developing a causal framework for item fairness using single world intervention graphs,&lt;/li&gt;
+&lt;li&gt;(iii) developing data-driven policy learning methods under fairness considerations in multilevel data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These projects are supported in part by an NSF grant.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
