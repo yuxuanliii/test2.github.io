@@ -1,0 +1,120 @@
+.main-page {
+  background-color: #ffffff; /* or any other color */
+}
+
+.home-page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background: white; */
+  padding: 0px;
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.lab-title-container {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* space between logo and title */
+  justify-content: center; /* center horizontally */
+  margin-bottom: 30px;
+}
+
+.lab-logo {
+  height: 50px; /* or any height you prefer */
+  width: auto;
+}
+
+.lab-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.home-page-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.home-page-content-row {
+  display: flex;
+  justify-content: space-between;  /* makes text left, image right */
+  gap: 10px;                        /* more breathing room */
+  align-items: flex-start;
+}
+
+/* Stack vertically on small screens */
+@media (max-width: 1000px) {
+  .home-page-content-row {
+    flex-direction: column;
+  }
+}
+
+.home-page-text-box {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin: 15px auto;  /* ***********change the position of images************ */
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 450px;
+  height: 350px;
+  border-radius: 8px;
+  transition: opacity 1s ease;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+  position: relative;
+}
+
+/* Dot styles */
+.dots-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #555;
+}
+
+
+
+.news-box {
+  /* background: rgb(230, 230, 230); */
+  background: var(--news);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+

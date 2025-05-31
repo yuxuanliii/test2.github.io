@@ -1,0 +1,134 @@
+.works {
+    /*background: #ffffff; /* White background for each paper block */
+    padding: 15px;
+    /* margin-bottom: 3px; Space between each paper block */
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/ /* Subtle shadow for 3D effect */
+}
+
+.name {
+    font-size: 18px; /* Larger font size for the paper title */
+    font-weight: bold;
+    color: var(--primary); /* Dark grey color for text */
+}
+
+.publicInfo{
+    font-size: 14px; /* Smaller font size for preprint and authors */
+    color: var(--secondary); /* Medium grey color for text */
+}
+
+.authors {
+    font-size: 14px; /* Smaller font size for preprint and authors */
+    color: var(--author); /* Medium grey color for text */
+}
+
+.pdfUrl, .citeBtn {
+    font-size: 14px;
+    border: 1px solid #0056b3;
+    text-decoration: none; /* Removes underline from links */
+    color: #0056b3; /* White text color */
+    /*background-color: #ffffff; /* Bootstrap primary blue */
+    padding: 2px 4px; /* Padding inside the button */
+    margin-right: 3px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    display: inline-block; /* Makes link behave like a button */
+}
+
+.pdfUrl:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #ffffff;
+}
+
+.citeBtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #ffffff;
+}
+
+
+/* Style for the modal background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    
+    background-color: rgb(0,0,0); /*Fallback color */
+    background-color: rgba(0,0,0,0.4); /*Black w/ opacity*/
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 40%; 
+    text-indent: 0px;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cite-title {
+    color: rgb(0, 0, 0);
+}
+
+.citationText {
+    /*overflow: auto; /* Enable scroll if needed */
+    display: block;
+    overflow-x: auto;
+    padding: .5em;
+    color: #333;
+    background: #f8f8f8;
+    font-size: 15px;
+    font-family: "", monospace;
+    word-break: normal;
+}
+
+.citationText::-webkit-scrollbar-thumb {
+    background: rgb(231, 231, 231);
+    border: 0px solid rgb(231, 231, 231);
+}
+
+#publication-search {
+    padding: 4px 10px;
+    width: 50%;
+    color: var(--primary);
+    font-weight: bold;
+    border: 2px solid var(--tertiary);
+    border-radius: var(--radius);
+}
+
+#publication-search:focus {
+    border-color: var(--secondary);
+}
+
+
+#publication-type {
+    padding: 5px 10px;
+    width: 25%;
+    color: var(--secondary);
+    font-weight: bold;
+    border: 2px solid var(--tertiary);
+    /* border-radius: var(--radius); */
+    font-size: 19px;
+    background-color: var(--theme);
+}
+
+
