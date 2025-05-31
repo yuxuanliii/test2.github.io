@@ -11,7 +11,7 @@ tocOpen: false #collapse toc
 math: true #enable math equations
 comments: true #enable comment function
 postSearch: true #enable search on this post
-draft: false #keep it as false to publish the post
+draft: true #keep it as false to publish the post
 ---
 
 ## Headings
